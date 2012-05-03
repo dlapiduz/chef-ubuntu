@@ -1,0 +1,70 @@
+{
+  "mysql": {
+    "server_root_password":  "root",
+    "bind_address": "127.0.0.1"
+  },
+  "ruby_enterprise": {
+    "version": "1.8.7-2010.01",
+    "install_path": "/usr/local",
+    "ruby_bin": "/usr/local/bin/ruby",
+    "gems_dir": "/usr/local/lib/ruby/gems/1.8",
+    "url": "http://rubyforge.org/frs/download.php/68719/ruby-enterprise-1.8.7-2010.01.tar.gz"
+  },
+  "passenger_enterprise": {
+    "version": "2.2.9",
+    "root_path": "/usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.9"
+  },
+  "gems": [
+    { "name": "rake" },
+    { "name": "rails" },
+    { "name": "bundler" },
+    { "name": "paperclip" },
+    { "name": "chronic" },
+    { "name": "coderay" },
+    { "name": "mysql" },
+    { "name": "newrelic_rpm" },
+    { "name": "rack" },
+    { "name": "rack-cache" },
+    { "name": "rakismet" },
+    { "name": "RedCloth" },
+    { "name": "ruby-openid" },
+    { "name": "will_paginate" },
+    { "name": "cucumber" },
+    { "name": "rspec" },
+    { "name": "rspec-rails" }
+  ],
+  "apps": [ 
+    { 
+      "name": "enki", 
+      "username": "akitaonrails", 
+      "git_branch": "akitaonrails", 
+      "server": "debian.local"
+    } 
+  ],
+  "users": {
+    "akitaonrails": {
+      "password": "$1$62AtR4zf$owGCHACYTpI3F/KOVvhTB1",
+      "comment": "Fabio Akita"
+    }
+  },
+  "ssh_keys": {
+    "akitaonrails": "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAn2ex9dhExIoIS4+s2TaCyCYlphhyVBitG56mqzrjh3K8i7BnYrS6k6uWtThaOUJu4mTBv4RJ7YsQ2YHzuSyX9U52CFD1dnJiZXlmpDGjckehBxdEvwLfsxT0qP40kdryp6peL6etvJDGpBk9pkAHVmYASSrcmG2PNhWPn9TXogAw2BhiQTOc9ep+i4HvdWbdM9xH7SX9zny6fiEEy5jEKvr3bxg9xcGPCPprZ+OimQg6FaHhgHXENB8UouioA1B/BQa+fEKC141rOxiRD81l/MDQNZYh2y1kWRbNxhdStzbXthoI9joq7Nl4sV6/xXZiW2lS9FKNY+8MQ6G/MCay0w== fabioakita@MacHal9001.local"
+  },
+  "authorization": {
+    "sudo": {
+      "users": ["akitaonrails"]
+    }
+  },
+  "recipes": [
+    "build-essential", 
+    "git", 
+    "iptables",
+    "users",
+    "sudo",
+    "imagemagick", 
+    "passenger_enterprise::nginx",
+    "gems",
+    "mysql::server", 
+    "simple_rails_app"
+  ]
+}
