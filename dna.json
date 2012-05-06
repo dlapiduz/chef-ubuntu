@@ -2,7 +2,8 @@
   "gems": [
     { "name": "rake" },
     { "name": "rails" },
-    { "name": "bundler" }
+    { "name": "bundler" },
+    { "name": "ruby-shadow" }
   ],
   "users": {
     "diego": {
@@ -27,6 +28,7 @@
     "imagemagick", 
     "nginx",
     "gems",
-    "mongodb"
+    "mongodb",
+    "unicorn"
   ]
 }
