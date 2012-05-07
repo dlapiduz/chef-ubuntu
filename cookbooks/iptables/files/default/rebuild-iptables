@@ -53,8 +53,8 @@ sub suffix {
   ( $data = <<'END_OF_SUFFIX' ) =~ s/^\s+//gm;
         # Rejects all remaining connections with port-unreachable errors.
 
-        -A FWR -p tcp -m tcp --tcp-flags SYN,RST,ACK SYN -j REJECT --reject-with icmp-port-unreachable
-        -A FWR -p udp -j REJECT --reject-with icmp-port-unreachable
+        #-A FWR -p tcp -m tcp --tcp-flags SYN,RST,ACK SYN -j REJECT --reject-with icmp-port-unreachable
+        #-A FWR -p udp -j REJECT --reject-with icmp-port-unreachable
         COMMIT
 END_OF_SUFFIX
 

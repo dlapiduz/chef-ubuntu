@@ -35,11 +35,11 @@
     "build-essential", 
     "git", 
     "iptables",
+    "gems",
     "users",
     "sudo",
     "imagemagick", 
     "nginx",
-    "gems",
     "mongodb",
     "unicorn"
   ]
