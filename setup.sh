@@ -5,7 +5,7 @@ export DEBIAN_FRONTEND=noninteractive
 # update the apt library with the current versions
 apt-get --yes --quiet update
 
-apt-get --yes --quit install build-essential zlib1g zlib1g-dev libreadline5 libreadline-gplv2-dev libssl-dev
+apt-get --yes --quiet install build-essential zlib1g zlib1g-dev libreadline5 libreadline-gplv2-dev libssl-dev
 
 curl -L get.rvm.io | bash -s stable
 
