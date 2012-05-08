@@ -22,7 +22,7 @@
   "authorization": {
     "sudo": {
       "users": ["diego"],
-      "passwordless" => true
+      "passwordless": "true"
     }
   },
   "nginx": {
