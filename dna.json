@@ -1,8 +1,8 @@
 {
-  "hostname": "sellarchy.com",
   "app": {
     "id": "sellarchy",
-    "deploy_to": "/www/sellarchy"
+    "deploy_to": "/www/sellarchy",
+    "url": "sellarchy.com"
   },
   "gems": [
     { "name": "rake" },
@@ -21,7 +21,8 @@
   },
   "authorization": {
     "sudo": {
-      "users": ["diego"]
+      "users": ["diego"],
+      "passwordless" => true
     }
   },
   "nginx": {
