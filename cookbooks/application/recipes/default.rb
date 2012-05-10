@@ -23,7 +23,7 @@ application node[:app][:id] do
   owner "www-data"
   group "www-data"
 
-  repository "git://git@coquito.sinaistudio.com:8513/sellarchy.git"
+  repository "git://git@coquito.sinaistudio.com/sellarchy.git"
   branch "master"
 
   rails do
