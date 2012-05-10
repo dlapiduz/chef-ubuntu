@@ -16,8 +16,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-include_recipe "application::rails"
-
 application node[:app][:id] do
   path node[:app][:deploy_to]
   owner "www-data"
