@@ -21,14 +21,10 @@ application node[:app][:id] do
   owner "www-data"
   group "www-data"
 
-  repository "git://git@coquito.sinaistudio.com/sellarchy.git"
-  branch "master"
+  repository "git@coquito.sinaistudio.com:sellarchy_new.git"
 
   rails do
     # Rails-specific configuration
   end
 
-  passenger_apache2 do
-    # Passenger-specific configuration
-  end
 end

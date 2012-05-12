@@ -23,3 +23,6 @@ when "redhat", "centos", "fedora"
 when "debian", "ubuntu"
   package "imagemagick"
 end
+
+include_recipe "imagemagick::rmagick"
+
